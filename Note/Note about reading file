@@ -1,0 +1,21 @@
+當要讀取一個 file 裡面的data時
+
+scanner.next(); 一次只能讀取一個字符，在遇到空格時或是其他特殊字符就會停止   (逐字讀取)
+scanner.nextLine(); 一次只能讀取一整行 但在遇到換行時 就會停止(能夠讀取帶有空白鍵的字串行) (逐行讀取)
+scanner.hasNextLine(); 讀取整個內容直到沒有內容為止，運作機制就是讀取是否還有下一行
+
+步驟在此 String filename = "檔案名.txt";
+		File f = new File(filename);
+        Scanner s = new Scanner(f)
+        
+
+步驟在此 try and chatch
+
+    try{
+    String filename = "檔案名.txt";
+		File f = new File(filename);
+        Scanner s = new Scanner(f)
+
+    }catch(FileNotFoundException e){
+        systme.println.out("File not found + filename")
+    }

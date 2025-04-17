@@ -1,0 +1,4 @@
+ImageIcon img;     <-- 先在feild 宣告
+
+img = new ImageIcon("圖片檔案的名字");             之後再方法裡面這樣打
+            img.paintIcon(null, g, x, y);

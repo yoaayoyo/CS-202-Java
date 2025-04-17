@@ -1,0 +1,16 @@
+第一個步驟
+public/Private/Protected
+
+第二個步驟 return type
+void / type of the value
+
+第三個步驟
+method name
+
+第四個步驟
+依據情況使用括號 
+
+How to call a method?
+Object name.method name
+
+public void gay(int kjkj,int nknjkn, string asdasd)

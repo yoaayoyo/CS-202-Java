@@ -1,0 +1,41 @@
+Rules
+-Class cannot start with digit
+-class cannot be a java keyword
+-no spaces
+
+
+Traditions
+-Class name start with uppercase letter 
+"MyFirstJavaProgran"  < is  a example.
+-Filename must the same with the class name
+
+
+
+How to Run Java Program?
+-Always complied the program after add or update.
+方法是 在command line 輸入 javac 檔名.java
+接者在 正常的 java 檔名 
+以上兩步驟即可 
+
+Change Directory 很重要
+方法 - cd 檔名
+回上一層 cd .. 
+以上兩步驟即可
+
+1/30 Loop
+
+1. Enhanced for loop: When you need to visit each element in an array.
+2. For loop: use it on thing that require counting, or run a block of code for the times I want (Arrays)
+3. While loop: Reading text file, open-ended jobs, you dont know how many times inside the file.
+
+2/11
+1. 當我們在設計for loop的條件時 i=0 這代表從最開始的第一個開始 i<5 代表者 當她碰到執行到第五次時候 就停止 i++ 代表 每一次執行 i+1
+
+ for (int i = 0; i < 2; i++) {
+        if (i % 2 == 0) {
+            g.setColor(Color.RED); // Odd number draw red
+        } else {
+            g.setColor(Color.WHITE); // even number draw white
+        }
+        g.fillRect(0, i*h1, w1, h1); // the position and width and hight of the flag
+   }

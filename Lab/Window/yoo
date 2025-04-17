@@ -1,0 +1,30 @@
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.Graphics;  
+//paintComponent(Graphics g) 裡面的Graphics 需要被import 但是paintComponent是屬於Jpanel的 所以已經被import了
+//以上上面這三個 都是需要把class從他們的資料庫被匯入的 所以才使用 import.
+
+public class windowFun extends JPanel{
+
+    @Override    //這代表我們在覆寫 從資料庫import進來的類別 是為了定制或修改從父類別繼承來的方法行為 不然我們只能使用他預設的樣子
+    public void paintComponent(Graphics g) {
+        g.drawString("CIS 202 noooo", 10,10);  //左邊的10是從 10px往左延伸，右邊的10 是從上面到下面延伸10px
+        g.drawString("CIS 202 noooo", 10,30);
+    }
+
+
+    public static void main (String[] args) {
+        //creat a new window
+        var window = new JFrame();
+
+        // set the window to be 200 width and height
+        window.setSize(200,200);  //這些都是裡面預設的功能
+
+        //close the app when the user closes the window
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //已經預設的功能 
+
+        //make the windowfun class responsible for the contents of our window
+        window.setContentPane(new windowFun());//已經預設可以使用的功能
+
+        window.setVisible(true);
+    }

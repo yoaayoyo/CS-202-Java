@@ -1,0 +1,31 @@
+迴圈 (loop) 的作用就是讓某個 方法 或 程式區塊 重複執行，直到 滿足某個停止條件 才結束
+
+你可以把 while 迴圈 想成一個不斷運行的機制，它的運作方式是：
+
+檢查條件是否為 true → 如果是，繼續執行迴圈內的程式碼。
+執行迴圈內的程式碼（例如 nextLine()）。
+再檢查條件 → 如果還是 true，則繼續執行，否則結束。
+
+ while (true) {                                 //這裡的條件是 true,所以會無限迴圈
+            String input = scanner.nextLine();  // 讀取使用者輸入
+
+            if (input.equalsIgnoreCase("exit")) {  // 如果輸入 "exit"，則停止迴圈
+                break;
+            }
+
+以上的例子說明了 這個while 迴圈 會讓 scanner.nextline 不停運行 直到if那邊的條件被滿足 才會停止
+
+
+另外的一個例子
+
+如果你已經知道要執行幾次迴圈，例如讀取10 行輸入：
+
+java
+
+for (int i = 0; i < 10; i++) {
+    String input = scanner.nextLine();
+    System.out.println("Line " + (i+1) + ": " + input);
+}
+
+這樣 nextLine() 只會執行 10 次，然後自動停止。
+
